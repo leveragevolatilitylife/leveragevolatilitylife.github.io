@@ -219,6 +219,8 @@
   }
   .card.is-ready:hover{ border-color: var(--accent); }
   .card.is-pending{ cursor: default; }
+  .card.is-pending[href]{ cursor: pointer; }
+  .card.is-pending[href]:hover{ border-color: var(--amber); }
 
   .card-top{
     display:flex;
@@ -335,20 +337,7 @@
 
   <section class="grid">
 
-    <a class="card is-pending" aria-disabled="true">
-      <div class="card-top">
-        <span class="ticker">NOTES</span>
-        <span class="status pending">建置中</span>
-      </div>
-      <h2>投資筆記</h2>
-      <p class="desc">策略邏輯、回測心得與市場觀察的長文紀錄,即將陸續發布。</p>
-      <div class="card-foot">
-        <span>敬請期待</span>
-        <span class="arrow">···</span>
-      </div>
-    </a>
-
-    <a class="card is-ready" href="https://leveragevolatilitylife.github.io/TWN-Stocks-Rotation-Strategy/" target="_blank" rel="noopener">
+    <a class="card is-ready" href="https://leveragevolatilitylife.github.io/TWN-Stocks-Rotation-Strategy/">
       <div class="card-top">
         <span class="ticker">ROTATION DASHBOARD</span>
         <span class="status live">LIVE</span>
@@ -366,7 +355,7 @@
       </div>
     </a>
 
-    <a class="card is-ready" href="https://leveragevolatilitylife.github.io/TWN-rotation-strategy-backtester/" target="_blank" rel="noopener">
+    <a class="card is-ready" href="https://leveragevolatilitylife.github.io/TWN-rotation-strategy-backtester/">
       <div class="card-top">
         <span class="ticker">BACKTEST</span>
         <span class="status live">LIVE</span>
@@ -382,6 +371,55 @@
       <div class="card-foot">
         <span>開始回測</span>
         <span class="arrow">→</span>
+      </div>
+    </a>
+
+    <a class="card is-pending" href="https://leveragevolatilitylife.github.io/MPT-allocation-backtester/">
+      <div class="card-top">
+        <span class="ticker">MPT ALLOCATION</span>
+        <span class="status pending">建置中</span>
+      </div>
+      <h2>動態 MPT 資產配置回測平台</h2>
+      <p class="desc">以現代投資組合理論為核心的動態資產配置回測,評估不同配置的風險與報酬。</p>
+      <div class="tags">
+        <span class="tag">MPT</span>
+        <span class="tag">Allocation</span>
+        <span class="tag">Backtest</span>
+      </div>
+      <div class="card-foot">
+        <span>前往平台</span>
+        <span class="arrow">→</span>
+      </div>
+    </a>
+
+    <a class="card is-pending" href="https://leveragevolatilitylife.github.io/ICCS_Options_Calculator/">
+      <div class="card-top">
+        <span class="ticker">OPTIONS CALC</span>
+        <span class="status pending">建置中</span>
+      </div>
+      <h2>Iron Condors / Calendars 期權策略計算機</h2>
+      <p class="desc">Iron Condor 與 Calendar 期權策略的損益與風險試算工具。</p>
+      <div class="tags">
+        <span class="tag">Iron Condor</span>
+        <span class="tag">Calendar</span>
+        <span class="tag">Options</span>
+      </div>
+      <div class="card-foot">
+        <span>前往計算機</span>
+        <span class="arrow">→</span>
+      </div>
+    </a>
+
+    <a class="card is-pending" aria-disabled="true">
+      <div class="card-top">
+        <span class="ticker">NOTES</span>
+        <span class="status pending">建置中</span>
+      </div>
+      <h2>投資筆記</h2>
+      <p class="desc">策略邏輯、回測心得與市場觀察的長文紀錄,即將陸續發布。</p>
+      <div class="card-foot">
+        <span>敬請期待</span>
+        <span class="arrow">···</span>
       </div>
     </a>
 
