@@ -219,8 +219,6 @@
   }
   .card.is-ready:hover{ border-color: var(--accent); }
   .card.is-pending{ cursor: default; }
-  .card.is-pending[href]{ cursor: pointer; }
-  .card.is-pending[href]:hover{ border-color: var(--amber); }
 
   .card-top{
     display:flex;
@@ -374,7 +372,7 @@
       </div>
     </a>
 
-    <a class="card is-pending" href="https://leveragevolatilitylife.github.io/MPT-allocation-backtester/">
+    <a class="card is-pending" aria-disabled="true">
       <div class="card-top">
         <span class="ticker">MPT ALLOCATION</span>
         <span class="status pending">建置中</span>
@@ -387,12 +385,12 @@
         <span class="tag">Backtest</span>
       </div>
       <div class="card-foot">
-        <span>前往平台</span>
-        <span class="arrow">→</span>
+        <span>敬請期待</span>
+        <span class="arrow">···</span>
       </div>
     </a>
 
-    <a class="card is-pending" href="https://leveragevolatilitylife.github.io/ICCS_Options_Calculator/">
+    <a class="card is-pending" aria-disabled="true">
       <div class="card-top">
         <span class="ticker">OPTIONS CALC</span>
         <span class="status pending">建置中</span>
@@ -405,8 +403,8 @@
         <span class="tag">Options</span>
       </div>
       <div class="card-foot">
-        <span>前往計算機</span>
-        <span class="arrow">→</span>
+        <span>敬請期待</span>
+        <span class="arrow">···</span>
       </div>
     </a>
 
